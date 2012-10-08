@@ -1,0 +1,153 @@
+* Summary
+
+** Duck Typing
+
+   Duck Typing is vital to getting the most out of Python.
+
+** Version Control
+
+   Just do it. With git and Mercurial, there's no excuse! Use a DVCS
+   for everything you do.
+
+** Testing
+
+   Helps to
+
+   + Focus your efforts on one task
+   + Document how your code works
+   + Give confidence in your code
+   + Refactor confidently
+
+   And it's much easier in Python than in Java and C++
+
+   py.test is a very useful test framework.
+
+** We practised writing lots of Python code
+
+   Classes and functions are the bread and butter of Python
+   programming.
+
+** Fundamental understanding
+
+   A solid understanding of certain Python ideas will make you a much
+   more effective Python programmer.
+
+   For example
+
+   + Universal behaviour of bindings
+   + LGB (and ICS)
+   + Duck Typing
+   + Rebinding vs. mutation
+   + Everything is a first-class object (functions, classes, modules etc.)
+
+** Duck Typing
+
+   This is *really* important. If you don't emphasize Duck Typing in
+   your Python programming, then you are likely to be struggling
+   against the language, rather than benefitting from it.
+
+** Context managers
+
+   The =with= statement allows you to provide and use abstractions for
+   patterns in which some code is is embedded inside some other code.
+
+   the contextlib.contextmanager decorator makes it very easy to write
+   your own.
+
+** Duck Typing
+
+   Just in case you forgot, Duck Typing is really important in Python.
+
+** Decorators
+
+   The decorator syntax provides a convenient way of providing
+   utilities.
+
+   Beyond the syntax, it's all built on the idea of passing functions
+   or classes as first class objects into the decorator, and
+   unleashing the full power of Python to manipulate them.
+
+   A typical decorator implementation will be a closure made by
+   writing 3 nested functions.
+
+   + The outer level accepts the parameter to the decorator
+   + The middle level *is* the decorator
+   + The inner level is the replacement of the object being decorated
+
+** Generators
+
+   Intended as a tool for easy creation of iterators. Iterators are
+   used to create lazy components. Lazy components enable the
+   efficient handling of large (even infinite) data sets.
+
+   Generators lend themselves to all sorts of interesting (ab)uses.
+
+   Another way of looking at them is as suspendable functions which
+   maintain state between invocations.
+
+   Either way, they can make all sorts of tasks much easier.
+
+** Metaprogramming
+
+   Python allows you to manipulate the structure of the program
+   components from within the program. This allows you to write
+   utilities which create program components.
+
+** Duck Typing
+
+   Don't forget Duck Typing
+
+** Dynamism
+
+   Python allows you to change all sorts of things at run time. This
+   doesn't mean that you should be doing it all the time. Used
+   judiciously, it can be of great help.
+
+** Profiling
+
+   Don't optimize your code without profiling it first. If you don't
+   profile before optimizing, it is likely that you will be optimizing
+   the wrong part of your code. This usually results in your code
+   getting uglier and more fragile, without any useful gain in speed.
+
+   Python has a (not particularly sophisticated) profiling module in
+   its standard library (cProfile).
+
+** Extensions
+
+   Python is designed to be extendable in low-level languages, via the
+   Python/C API.
+
+   Tools exist to make this task easier, such as SWIG or Boost.python.
+
+   We looked at Cython, which allows us to compile pure python code
+   into C and use it as an extension module. It also allows you to add
+   type declarations in places where you want to forgo dynamicm in
+   exchange for increased performance. Cython can also be used as a
+   bridge between Python and existing low-level libraries.
+
+   We also looked at ctypes, a standard FFI (Foreign Function
+   Interface) module, which allows you to use C shared libraries from
+   Python.
+
+** Duck Typing
+
+   Did I mention Duck Typing ?
+
+** Closures
+
+   Closures provide a quick and cheap way of combining functionality
+   and state. In this repsect the can sometimes act as a cleaner,
+   cheaper, more efficient substitute for classes.
+
+   You can use nested function definitions to implement function
+   factories. These return closures which are functions belonging to
+   some family or related functions.
+
+   Closures are usually the easiest and neatest way of implementing
+   decorators.
+
+
+
+
+#+style: <link rel="stylesheet" type="text/css" href="../courses.css" />
